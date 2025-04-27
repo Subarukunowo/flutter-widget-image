@@ -30,7 +30,43 @@ class Home extends StatelessWidget {
         title: const Text('Demo Row Widget'),
       ),
       body: Center(
-        // bagian Row akan disambung di bawah sini
+        child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          children: [
+            // Baris 1
+            Container(
+              width: 80,
+              height: 80,
+              color: Colors.red,
+              alignment: Alignment.center,
+              child: const Text('1'),
+            ),
+            // Baris 2
+            Container(
+              width: 80,
+              height: 80,
+              color: Colors.green,
+              alignment: Alignment.center,
+              child: const Text('2'),
+            ),
+            // Baris 3
+            Container(
+              width: 80,
+              height: 80,
+              color: Colors.blue,
+              alignment: Alignment.center,
+              child: const Text('3'),
+            ),
+            // Baris 4
+            Container(
+              width: 80,
+              height: 80,
+              color: Colors.yellow,
+              alignment: Alignment.center,
+              child: const Text('4'),
+            ),
+          ],
+        ),
       ),
     );
   }
